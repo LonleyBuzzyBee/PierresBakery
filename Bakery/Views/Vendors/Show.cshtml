@@ -1,0 +1,16 @@
+@using Places.Models;
+
+
+<div class="parent">
+ <h3>Here are all the items in this category:</h3>
+    <ol>
+    @foreach (var order in @Model["orders"])
+    {
+      <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Description</a></li>
+    }
+    </ol>
+
+    <a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new order</a>
+    <a href='/categories'>Return to vendors list</a>
+    <a href='/'>Home</a>
+</div>
