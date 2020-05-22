@@ -50,7 +50,11 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_C#_
+_Asp.Net_
+_CSHTML_
+_MarkDown_
+_MVC_
 
 ### License
 
