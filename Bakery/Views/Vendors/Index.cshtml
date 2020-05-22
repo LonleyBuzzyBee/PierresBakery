@@ -1,0 +1,22 @@
+@using Places.Models;
+
+
+<div class="parent">
+  <h1>List of vendors</h1>
+
+  @if(Model.Count == 0)
+  {
+    <p>Ain't nuthin here</p>
+  }
+  <ul>
+    @foreach(Vendor vendor in Model)
+    {
+  <li> <a href="vendor/@vendro.Id"> @vendor.Name</a></li>
+    }
+    
+  </ul>
+  <div class="AButton">
+  <a  href="/vendor/new">Add a new vendor</a>
+  <a href="/">Home</a>
+  </div>
+</div>
