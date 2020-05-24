@@ -10,11 +10,6 @@ namespace Bakery.Controllers
     {
       return View();
     }
-    // [HttpGet("/photos")]
-    // public ActionResult Photos()
-    // {
-    //   return View();
-    // }
 
   }
 }

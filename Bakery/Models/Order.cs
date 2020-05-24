@@ -7,10 +7,10 @@ namespace Bakery.Models
     public int Id { get; }
     private static List<Order> _instances = new List<Order> { };
     public string Description { get; set; }
-    public double Price { get; set; }
+    public int Price { get; set; }
     public string Date { get; set; }
 
-    public Order(string description, double price, string date)
+    public Order(string description, int price, string date)
     {
 
       Description = description;
@@ -26,10 +26,10 @@ namespace Bakery.Models
     {
       return _instances;
     }
-    public static Order Find(int searchId)
-    {
-      return _instances[searchId - 1];
-    }
+    // public static Order Find(int searchId)
+    // {
+    //   return _instances[searchId - 1];
+    // }
 
   }
 }
