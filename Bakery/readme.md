@@ -9,15 +9,16 @@
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This webpage was created to help pierre keep track of different vendors at his bakery with their respective orders_
 
 ## Project Specifications
 
-| Behavior | Input | Output |
-|---|---|---|
-|   |   |   |
-|   |   |   |
-|   |   |   |
+* The user is brought to the main page
+* The user is able to navigate to either a list of vendors or add a new vendor to the list
+* the user is able to click on a vendor and brought to their details page
+* the user is able to see if there are any orders for this vendor
+* user is able to click on the order and see its details
+* the user is then able to delete the order if they want to
 
 ## Setup/Installation Requirements
 
@@ -26,10 +27,10 @@ _In Terminal:_
 * Navigate to where you want this application to be saved, i.e.:
 ```cd desktop```
 * Clone the file from GitHub with HTTPS
-```git clone https://github.com/kwicz/beep-boop.git```
+```git clonehttps://github.com/LonleyBuzzyBee/PierresBakery.git```
 * Open file in your preferred text editor
-* On Mac: ```open -a {your text editor} beep-boop```
-* On Windows: ```beep-boop```
+* On Mac: ```open -a {your text editor} PierresBakery```
+* On Windows: ```PierresBakery```
 
 _To Download Manually:_
 

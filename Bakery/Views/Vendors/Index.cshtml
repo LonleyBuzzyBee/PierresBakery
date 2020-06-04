@@ -1,5 +1,7 @@
+@{
+  Layout = "_Layout";
+}
 @using Bakery.Models;
-
 
 <div class="parent">
   <h1>List of vendors</h1>
@@ -9,10 +11,10 @@
     <p>Ain't nuthin here</p>
   }
   <ul>
-    @foreach(Vendor vendor in Model)
-    {
-  <li> <a href="vendor/@vendor.Id"> @vendor.Name</a></li>
-    }
+  @foreach(Vendor vendor in Model)
+  {
+<li> <a href="vendors/@vendor.Id"> @vendor.Name</a></li>
+  }
     
   </ul>
   <div class="AButton">

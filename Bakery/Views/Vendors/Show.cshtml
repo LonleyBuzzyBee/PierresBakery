@@ -1,16 +1,32 @@
+@{
+  Layout = "_Layout";
+}
 @using Bakery.Models;
 
 
 <div class="parent">
- <h3>Here are all the items in this category:</h3>
-    <ol>
-    @foreach (var order in @Model["orders"])
-    {
-      <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Description</a></li>
-    }
-    </ol>
+ <h3>Here are all the orders for this vendor:</h3>
 
-    <a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new order</a>
-    <a href='/categories'>Return to vendors list</a>
+  <h2>Vendor Name: @Model["vendor"].Name</h2>
+  <h4>Here are their orders:</h4>
+
+  <ul>
+    @if(@Model["orders"].Count == 0)
+    {
+      <p>no orders</p>
+    }
+    else
+    {
+      @foreach(Order order in @Model["orders"])
+      {
+        <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Description</a></li>
+        
+      }
+    }
+  </ul>
+
+    <a href='/vendors'>Return to vendors list</a>
     <a href='/'>Home</a>
+    <a href="/vendors/@Model["vendor"].Id/orders/new">add orders for this vendor</a>
+    
 </div>
