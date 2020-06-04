@@ -1,0 +1,60 @@
+body
+{
+  background-image: url("../img/bread.jpg");
+}
+.parent
+{
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    background-color: rgba(202, 218, 195, 0.733);
+}
+.innerParent
+{
+  min-height: 500px;
+  height: auto !important;
+  height: 600px;
+  display: flex;
+  padding: 40px;
+  border-radius: 5px;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  background-color: rgba(139, 194, 114, 0.692);
+}
+form
+{
+  display: flex;
+  flex-direction: column;
+}
+input{
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+button{
+  margin-bottom: 3px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+a:hover{
+  transform: scale(1.1)
+}
+a, button
+{
+  margin: 20px;
+  background-color: rgb(209, 247, 192);
+  border-color:rgb(209, 247, 192);
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgb(121, 224, 126);
+}
+.link{
+  display: flex;
+  flex-direction: row;
+}
+li{
+  margin:15px
+}

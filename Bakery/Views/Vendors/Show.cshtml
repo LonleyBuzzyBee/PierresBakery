@@ -4,7 +4,7 @@
 @using Bakery.Models;
 
 
-<div class="parent">
+<div class="innerParent">
  <h3>Here are all the orders for this vendor:</h3>
 
   <h2>Vendor Name: @Model["vendor"].Name</h2>
@@ -24,9 +24,9 @@
       }
     }
   </ul>
-
+ <div class="link">
     <a href='/vendors'>Return to vendors list</a>
-    <a href='/'>Home</a>
+    <a href='/' class="link">Home</a>
     <a href="/vendors/@Model["vendor"].Id/orders/new">add orders for this vendor</a>
-    
+  </div>
 </div>

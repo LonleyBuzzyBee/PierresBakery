@@ -1,13 +1,15 @@
 @{
   Layout = "_Layout";
 }
-<div class="parent">
+<div class="innerParent">
   <h2>Add a vendor :]</h2>
   <form action="/vendors" method="post">
   <label for="vendorName">Enter the name vendor</label>
   <input id="vendorName" name="vendorName" type="text">
   <button type="submit">Submit</button>
   </form>
-  <a href="/">Home</a>
-  <a href="/vendors">Back to vendors</a>
+  <div class="link">
+    <a href="/">Home</a>
+    <a href="/vendors">Back to vendors</a>
+  </div>
 </div>
